@@ -2,7 +2,11 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen text-center px-4 bg-[#0b0b20]">
+    <main
+      role="main"
+      aria-label="404 Error Page"
+      className="flex flex-col items-center justify-center min-h-screen text-center px-4 bg-[#0b0b20]"
+    >
       <h1 className="text-[120px] md:text-[180px] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-linear-to-r from-[#ff4f5e] to-[#ff9400] mb-4">
         Oops!
       </h1>
@@ -19,6 +23,7 @@ export default function NotFound() {
       <Link
         href="/"
         className="flex items-center gap-2 bg-linear-to-r from-[#ff4f5e] to-[#ff9400] text-white px-8 py-3 rounded-full font-semibold transition-transform hover:scale-105 active:scale-95 shadow-lg"
+        aria-label="Return to homepage"
       >
         GO TO HOMEPAGE
       </Link>
